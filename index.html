@@ -46,10 +46,10 @@ Prashilkumar P. Khurpe ("we", "our", or "us") operates the Majalgaon Directory m
 
 1. Information We Collect
 To provide and improve our local directory services, we may collect the following information:
-- Personal Profile Information: Full Name, Phone Number, Date of Birth (optional), Email Address (optional), and Password. If you sign in with Google, we instead receive your Google Account's name and email address (verified by Google), and no password is stored.
-- Contributions and Reviews: User-generated content, ratings, reviews, and comments regarding local businesses and services.
-- Business Listing Information: If you register your own business through the App, we collect the business's name, category, address, phone number, GPS coordinates, description, and operating hours. This information is intended to be shown publicly in the directory once reviewed and approved by an administrator.
-- Device Identifier: When you register a business, we record a device identifier (Android ID) solely to limit the number of business listings that can be registered from a single device or account, as an anti-abuse measure. It is not used to track your activity elsewhere.
+- Personal Profile Information: Full Name, Phone Number, Date of Birth (required, used to verify your identity for account-deletion requests), Email Address (optional), and Password. If you sign in with Google, we instead receive your Google Account's name and email address (verified by Google), and no password is stored.
+- Contributions and Content: User-generated content including ratings, reviews, and comments on local businesses; and, for accounts specifically authorized to do so, news posts and photos shared with the local community, plus "likes"/reactions on that content.
+- Business Listing Information: If you register your own business through the App, we collect the business's name, category, address, phone number, GPS coordinates, description, operating hours, and an optional photo. This information is intended to be shown publicly in the directory once reviewed and approved by an administrator.
+- Device Identifier: When you register a business or create an account, we record a device identifier (Android ID) solely to limit the number of business listings and accounts that can be registered from a single device, as an anti-abuse measure. It is not used to track your activity elsewhere.
 - Location Information: With your explicit permission (via your device's location permission prompt), we access your device's approximate or precise location to show you nearby businesses and calculate distance. You may decline this permission and the App remains fully usable — location access only enables distance-based sorting and is not required for core features.
 - Connection Information: Basic log data related to synchronization requests with our secure cloud servers.
 
@@ -63,7 +63,7 @@ We use the collected data for various purposes:
 - To allow secure offline storage via local Room databases and seamless cloud-sync to MongoDB Atlas.
 
 3. Sharing and Disclosure
-We do NOT sell, trade, or share your personal identification info with any third-party marketing companies, advertisers, or secondary organizations. Your data is strictly used for the core directory services of Majalgaon Directory. Business listings you submit (business name, address, phone, hours, etc.) are, by design, published publicly within the App's directory once approved, since that is the purpose of the listing feature — this does not apply to your personal account information (name, phone, password, DOB), which is never made public.
+We do NOT sell, trade, or share your personal identification info with any third-party marketing companies, advertisers, or secondary organizations. Your data is strictly used for the core directory services of Majalgaon Directory. Business listings you submit (business name, address, phone, hours, etc.) are, by design, published publicly within the App's directory once approved, since that is the purpose of the listing feature — this does not apply to your personal account information (name, phone, password, DOB), which is never made public. Photos attached to news posts or business listings (when you choose to add one) are stored with Cloudinary, an image-hosting service, solely to display that image within the App — Cloudinary does not receive any of your other personal information.
 
 4. Data Security and Offline Mode
 The App is built with an offline-first design pattern. Most information is saved on your device's secure sandbox using SQLite Room databases. When you perform cloud synchronization, your account details and contributed reviews are transmitted securely over SSL/TLS encrypted pipelines to our secure server clusters.
@@ -99,10 +99,10 @@ If you have any questions or feedback about this Privacy Policy, please contact 
 
 १. गोळा केली जाणारी माहिती
 स्थानिक निर्देशिका सेवा प्रदान करण्यासाठी आणि त्यामध्ये सुधारणा करण्यासाठी, आम्ही खालील माहिती गोळा करू शकतो:
-- वैयक्तिक प्रोफाईल माहिती: पूर्ण नाव, फोन नंबर, जन्मतारीख (पर्यायी), ईमेल पत्ता (पर्यायी) आणि पासवर्ड. जर तुम्ही Google द्वारे साइन इन केले, तर आम्हाला त्याऐवजी तुमच्या Google खात्याचे नाव आणि Google द्वारे पडताळलेला ईमेल पत्ता मिळतो, आणि कोणताही पासवर्ड साठवला जात नाही.
-- योगदान आणि पुनरावलोकने (Reviews): स्थानिक व्यवसाय आणि सेवांबद्दल वापरकर्त्याने तयार केलेले रेटिंग, पुनरावलोकने आणि टिप्पण्या.
-- व्यवसाय नोंदणी माहिती: जर तुम्ही ॲपद्वारे स्वतःचा व्यवसाय नोंदणी केला, तर आम्ही व्यवसायाचे नाव, श्रेणी, पत्ता, फोन नंबर, जीपीएस स्थान, वर्णन आणि कामकाजाचे तास गोळा करतो. प्रशासकाने पुनरावलोकन आणि मंजुरी दिल्यानंतर ही माहिती डायरेक्टरीमध्ये सार्वजनिकरित्या दाखवण्याच्या उद्देशाने आहे.
-- डिव्हाइस ओळखकर्ता: व्यवसाय नोंदणी करताना, गैरवापर रोखण्यासाठी एका डिव्हाइस/खात्यावरून नोंदणी करता येणाऱ्या व्यवसायांची संख्या मर्यादित करण्यासाठी डिव्हाइस ओळखकर्ता (Android ID) नोंदवला जातो. याचा वापर तुमच्या इतर हालचाली ट्रॅक करण्यासाठी केला जात नाही.
+- वैयक्तिक प्रोफाईल माहिती: पूर्ण नाव, फोन नंबर, जन्मतारीख (आवश्यक — खाते हटवण्याच्या विनंतीसाठी तुमची ओळख पडताळण्यासाठी वापरली जाते), ईमेल पत्ता (पर्यायी) आणि पासवर्ड. जर तुम्ही Google द्वारे साइन इन केले, तर आम्हाला त्याऐवजी तुमच्या Google खात्याचे नाव आणि Google द्वारे पडताळलेला ईमेल पत्ता मिळतो, आणि कोणताही पासवर्ड साठवला जात नाही.
+- योगदान आणि सामग्री: स्थानिक व्यवसायांवरील रेटिंग, पुनरावलोकने आणि टिप्पण्या; तसेच, यासाठी विशेष अधिकृत खात्यांसाठी, स्थानिक समुदायासोबत शेअर केलेल्या बातम्या आणि फोटो, तसेच त्या सामग्रीवरील "लाईक"/प्रतिक्रिया.
+- व्यवसाय नोंदणी माहिती: जर तुम्ही ॲपद्वारे स्वतःचा व्यवसाय नोंदणी केला, तर आम्ही व्यवसायाचे नाव, श्रेणी, पत्ता, फोन नंबर, जीपीएस स्थान, वर्णन, कामकाजाचे तास आणि पर्यायी फोटो गोळा करतो. प्रशासकाने पुनरावलोकन आणि मंजुरी दिल्यानंतर ही माहिती डायरेक्टरीमध्ये सार्वजनिकरित्या दाखवण्याच्या उद्देशाने आहे.
+- डिव्हाइस ओळखकर्ता: व्यवसाय नोंदणी किंवा खाते तयार करताना, गैरवापर रोखण्यासाठी एका डिव्हाइसवरून नोंदणी करता येणाऱ्या व्यवसायांची आणि खात्यांची संख्या मर्यादित करण्यासाठी डिव्हाइस ओळखकर्ता (Android ID) नोंदवला जातो. याचा वापर तुमच्या इतर हालचाली ट्रॅक करण्यासाठी केला जात नाही.
 - स्थान माहिती: तुमच्या स्पष्ट परवानगीने (तुमच्या डिव्हाइसच्या स्थान परवानगी विनंतीद्वारे), जवळचे व्यवसाय दाखवण्यासाठी आणि अंतर मोजण्यासाठी आम्ही तुमचे अंदाजे किंवा अचूक स्थान वापरतो. तुम्ही ही परवानगी नाकारू शकता आणि ॲप पूर्णपणे वापरण्यायोग्य राहते — स्थान प्रवेश फक्त अंतरानुसार क्रमवारीसाठी वापरला जातो आणि आवश्यक नाही.
 - कनेक्शन माहिती: आमच्या सुरक्षित क्लाउड सर्व्हरसह सिंक्रोनाइझेशनशी संबंधित मूलभूत लॉग डेटा.
 
@@ -116,7 +116,7 @@ If you have any questions or feedback about this Privacy Policy, please contact 
 - सुरक्षित ऑफलाइन स्टोरेज आणि क्लाउड-सिंक (MongoDB Atlas) सुरळीतपणे चालवण्यासाठी.
 
 ३. माहितीचे सामायिकरण आणि प्रकटीकरण
-आम्ही तुमची वैयक्तिक माहिती कोणत्याही तृतीय-पक्ष विपणन कंपन्या, जाहिरातदार किंवा दुय्यम संस्थांना विकत नाही, व्यापार करत नाही किंवा सामायिक करत नाही. तुमचा डेटा केवळ माजलगाव डायरेक्टरीच्या मूळ सेवांसाठी वापरला जातो. तुम्ही सबमिट केलेली व्यवसाय नोंद (व्यवसायाचे नाव, पत्ता, फोन, वेळा इ.) मंजुरीनंतर, या वैशिष्ट्याच्या उद्देशानुसार, ॲपच्या डायरेक्टरीमध्ये सार्वजनिकरित्या प्रकाशित केली जाते — हे तुमच्या वैयक्तिक खाते माहितीला (नाव, फोन, पासवर्ड, जन्मतारीख) लागू होत नाही, जी कधीही सार्वजनिक केली जात नाही.
+आम्ही तुमची वैयक्तिक माहिती कोणत्याही तृतीय-पक्ष विपणन कंपन्या, जाहिरातदार किंवा दुय्यम संस्थांना विकत नाही, व्यापार करत नाही किंवा सामायिक करत नाही. तुमचा डेटा केवळ माजलगाव डायरेक्टरीच्या मूळ सेवांसाठी वापरला जातो. तुम्ही सबमिट केलेली व्यवसाय नोंद (व्यवसायाचे नाव, पत्ता, फोन, वेळा इ.) मंजुरीनंतर, या वैशिष्ट्याच्या उद्देशानुसार, ॲपच्या डायरेक्टरीमध्ये सार्वजनिकरित्या प्रकाशित केली जाते — हे तुमच्या वैयक्तिक खाते माहितीला (नाव, फोन, पासवर्ड, जन्मतारीख) लागू होत नाही, जी कधीही सार्वजनिक केली जात नाही. बातम्यांच्या पोस्ट किंवा व्यवसाय नोंदींशी जोडलेले फोटो (जेव्हा तुम्ही ते जोडता) फक्त ॲपमध्ये दाखवण्यासाठी Cloudinary या इमेज-होस्टिंग सेवेवर साठवले जातात — Cloudinary ला तुमची इतर कोणतीही वैयक्तिक माहिती मिळत नाही.
 
 ४. डेटा सुरक्षा आणि ऑफलाइन मोड
 हे ॲप ऑफलाइन-फर्स्ट डिझाइन पॅटर्नसह तयार केले गेले आहे. बहुतांश माहिती तुमच्या डिव्हाइसच्या सुरक्षित सँडबॉक्सवर SQLite रूम डेटाबेसचा वापर करून सुरक्षित ठेवली जाते. जेव्हा तुम्ही क्लाउड सिंक करता, तेव्हा तुमचे खाते तपशील आणि पुनरावलोकने आमच्या सुरक्षित सर्व्हर क्लस्टर्समध्ये SSL/TLS एनक्रिप्टेड पाइपलाइनद्वारे सुरक्षितपणे पाठवली जातात.
