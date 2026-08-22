@@ -1,2 +1,2 @@
 # privacy-policy-
-majalgaon business directory app privacy policy
+Majalgaon City app privacy policy
