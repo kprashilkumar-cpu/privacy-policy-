@@ -52,6 +52,7 @@ To provide and improve our local directory services, we may collect the followin
 - Device Identifier: When you register a business or create an account, we record a device identifier (Android ID) solely to limit the number of business listings and accounts that can be registered from a single device, as an anti-abuse measure. It is not used to track your activity elsewhere.
 - Location Information: With your explicit permission (via your device's location permission prompt), we access your device's approximate or precise location to show you nearby businesses and calculate distance. You may decline this permission and the App remains fully usable — location access only enables distance-based sorting and is not required for core features.
 - Connection Information: Basic log data related to synchronization requests with our secure cloud servers.
+- Push Notification Token: If you grant notification permission, we store a device-specific push-notification token (issued by Firebase Cloud Messaging) on your account, used solely to deliver in-app content notifications — for example, when a reporter you're subscribed to posts new news, a reel, or an e-paper. You may decline or later revoke notification permission from your device settings at any time; the App remains fully usable without it, and declining/revoking only disables this notification delivery.
 
 2. How We Use Your Information
 We use the collected data for various purposes:
@@ -61,6 +62,7 @@ We use the collected data for various purposes:
 - To review and publish business listings you submit, and to limit business registrations per account/device to prevent abuse.
 - To show you nearby businesses and approximate distances, only when you grant location permission.
 - To allow secure offline storage via local Room databases and seamless cloud-sync to MongoDB Atlas.
+- To deliver notifications about new content (news, reels, e-papers) from reporters you're subscribed to, only if you've granted notification permission; you may unsubscribe from any specific reporter, or revoke notification permission entirely, at any time from within the App or your device settings.
 
 3. Sharing and Disclosure
 We do NOT sell, trade, or share your personal identification info with any third-party marketing companies, advertisers, or secondary organizations. Your data is strictly used for the core directory services of Majalgaon City. Business listings you submit (business name, address, phone, hours, etc.) are, by design, published publicly within the App's directory once approved, since that is the purpose of the listing feature — this does not apply to your personal account information (name, phone, password, DOB), which is never made public. Photos attached to news posts or business listings (when you choose to add one) are stored with Cloudinary, an image-hosting service, solely to display that image within the App — Cloudinary does not receive any of your other personal information.
@@ -72,6 +74,7 @@ The App is built with an offline-first design pattern. Most information is saved
 The App requests the following permissions:
 - INTERNET: required for essential data synchronization.
 - ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION: optional, requested only when you tap the location icon in the App or choose to sort businesses by distance. You may deny this permission and continue using the App normally; declining only disables distance sorting and nearby-business features.
+- POST_NOTIFICATIONS (Android 13 and above only): requested once, to show notifications for new content from reporters you're subscribed to. This permission does not exist on versions older than Android 13, so no prompt is shown there. You may deny it and continue using the App normally; declining only means you won't receive these in-app content notifications.
 No camera, storage, contact list, or microphone permissions are requested or accessed by the App.
 
 6. Children's Privacy
@@ -85,6 +88,7 @@ You have the right to request the deletion of your account and all associated pe
 Upon submitting your deletion request, and after we verify it is genuinely from you (via your registered Date of Birth, or registered email for Google-authenticated accounts):
 - All personal profile information (including your name, phone number, and password) will be permanently and securely deleted from our local SQLite database and secure MongoDB Atlas cloud servers.
 - All associated login records and account metadata will be purged.
+- Your push-notification token and reporter subscription/notification preferences will be deleted along with your account.
 - Reviews you submitted will be permanently deleted.
 - The deletion process is completed within 7 days of submitting and verifying your request.
 - Your in-app activity and security log entries (Section 7) are the one exception to the deletion above: consistent with standard security-logging practice and as disclosed in Section 7, these are retained for internal security and service-integrity purposes even after your account is deleted. They are never used for any purpose beyond that, and are never shared publicly or with third parties.
@@ -109,6 +113,7 @@ If you have any questions or feedback about this Privacy Policy, please contact 
 - डिव्हाइस ओळखकर्ता: व्यवसाय नोंदणी किंवा खाते तयार करताना, गैरवापर रोखण्यासाठी एका डिव्हाइसवरून नोंदणी करता येणाऱ्या व्यवसायांची आणि खात्यांची संख्या मर्यादित करण्यासाठी डिव्हाइस ओळखकर्ता (Android ID) नोंदवला जातो. याचा वापर तुमच्या इतर हालचाली ट्रॅक करण्यासाठी केला जात नाही.
 - स्थान माहिती: तुमच्या स्पष्ट परवानगीने (तुमच्या डिव्हाइसच्या स्थान परवानगी विनंतीद्वारे), जवळचे व्यवसाय दाखवण्यासाठी आणि अंतर मोजण्यासाठी आम्ही तुमचे अंदाजे किंवा अचूक स्थान वापरतो. तुम्ही ही परवानगी नाकारू शकता आणि ॲप पूर्णपणे वापरण्यायोग्य राहते — स्थान प्रवेश फक्त अंतरानुसार क्रमवारीसाठी वापरला जातो आणि आवश्यक नाही.
 - कनेक्शन माहिती: आमच्या सुरक्षित क्लाउड सर्व्हरसह सिंक्रोनाइझेशनशी संबंधित मूलभूत लॉग डेटा.
+- पुश सूचना टोकन: जर तुम्ही सूचना परवानगी दिली, तर आम्ही तुमच्या खात्यावर एक डिव्हाइस-विशिष्ट पुश-सूचना टोकन (Firebase Cloud Messaging द्वारे जारी केलेला) साठवतो, जो फक्त ॲपमधील सामग्री सूचना पाठवण्यासाठी वापरला जातो — उदाहरणार्थ, जेव्हा तुम्ही सबस्क्राइब केलेला वार्ताहर नवीन बातमी, रील किंवा ई-पेपर पोस्ट करतो. तुम्ही सूचना परवानगी कधीही नाकारू शकता किंवा तुमच्या डिव्हाइस सेटिंग्जमधून रद्द करू शकता; ॲप त्याशिवायही पूर्णपणे वापरण्यायोग्य राहते — नाकारल्याने/रद्द केल्याने फक्त ही सूचना सेवा बंद होते.
 
 २. आम्ही तुमच्या माहितीचा वापर कसा करतो
 आम्ही गोळा केलेल्या डेटाचा वापर विविध कारणांसाठी करतो:
@@ -118,6 +123,7 @@ If you have any questions or feedback about this Privacy Policy, please contact 
 - तुम्ही सबमिट केलेल्या व्यवसाय नोंदी पुनरावलोकन आणि प्रकाशित करण्यासाठी, आणि गैरवापर रोखण्यासाठी प्रति खाते/डिव्हाइस व्यवसाय नोंदणी मर्यादित करण्यासाठी.
 - तुम्ही स्थान परवानगी दिल्यासच, जवळचे व्यवसाय आणि अंदाजे अंतर दाखवण्यासाठी.
 - सुरक्षित ऑफलाइन स्टोरेज आणि क्लाउड-सिंक (MongoDB Atlas) सुरळीतपणे चालवण्यासाठी.
+- तुम्ही सबस्क्राइब केलेल्या वार्ताहरांकडून येणाऱ्या नवीन सामग्रीबद्दल (बातम्या, रील्स, ई-पेपर) सूचना पाठवण्यासाठी, फक्त जर तुम्ही सूचना परवानगी दिली असेल; तुम्ही कोणत्याही विशिष्ट वार्ताहरापासून अनसबस्क्राइब करू शकता, किंवा सूचना परवानगी पूर्णपणे रद्द करू शकता, ॲपमध्ये किंवा तुमच्या डिव्हाइस सेटिंग्जमधून कधीही.
 
 ३. माहितीचे सामायिकरण आणि प्रकटीकरण
 आम्ही तुमची वैयक्तिक माहिती कोणत्याही तृतीय-पक्ष विपणन कंपन्या, जाहिरातदार किंवा दुय्यम संस्थांना विकत नाही, व्यापार करत नाही किंवा सामायिक करत नाही. तुमचा डेटा केवळ माजलगाव सिटीच्या मूळ सेवांसाठी वापरला जातो. तुम्ही सबमिट केलेली व्यवसाय नोंद (व्यवसायाचे नाव, पत्ता, फोन, वेळा इ.) मंजुरीनंतर, या वैशिष्ट्याच्या उद्देशानुसार, ॲपच्या डायरेक्टरीमध्ये सार्वजनिकरित्या प्रकाशित केली जाते — हे तुमच्या वैयक्तिक खाते माहितीला (नाव, फोन, पासवर्ड, जन्मतारीख) लागू होत नाही, जी कधीही सार्वजनिक केली जात नाही. बातम्यांच्या पोस्ट किंवा व्यवसाय नोंदींशी जोडलेले फोटो (जेव्हा तुम्ही ते जोडता) फक्त ॲपमध्ये दाखवण्यासाठी Cloudinary या इमेज-होस्टिंग सेवेवर साठवले जातात — Cloudinary ला तुमची इतर कोणतीही वैयक्तिक माहिती मिळत नाही.
@@ -129,6 +135,7 @@ If you have any questions or feedback about this Privacy Policy, please contact 
 ॲप खालील परवानग्या मागते:
 - इंटरनेट (INTERNET): आवश्यक डेटा सिंक्रोनाइझेशनसाठी आवश्यक.
 - अचूक/अंदाजे स्थान (ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION): पर्यायी, केवळ जेव्हा तुम्ही ॲपमधील स्थान चिन्हावर टॅप करता किंवा अंतरानुसार व्यवसाय क्रमवारी लावण्याचे निवडता तेव्हाच विनंती केली जाते. तुम्ही ही परवानगी नाकारू शकता आणि ॲप सामान्यपणे वापरणे सुरू ठेवू शकता; नकार दिल्याने केवळ अंतर क्रमवारी आणि जवळपासच्या व्यवसाय वैशिष्ट्यांना अक्षम करते.
+- सूचना (POST_NOTIFICATIONS) (फक्त Android १३ आणि त्यावरील आवृत्त्यांसाठी): तुम्ही सबस्क्राइब केलेल्या वार्ताहरांकडील नवीन सामग्रीच्या सूचना दाखवण्यासाठी एकदा विनंती केली जाते. Android १३ पेक्षा जुन्या आवृत्त्यांवर ही परवानगी अस्तित्वात नाही, त्यामुळे तिथे कोणताही प्रॉम्प्ट दाखवला जात नाही. तुम्ही ती नाकारू शकता आणि ॲप सामान्यपणे वापरणे सुरू ठेवू शकता; नकार दिल्याने फक्त तुम्हाला या ॲप-सामग्री सूचना मिळणार नाहीत.
 ॲपद्वारे कॅमेरा, स्टोरेज, संपर्क यादी किंवा मायक्रोफोन परवानग्या मागितल्या किंवा वापरल्या जात नाहीत.
 
 ६. मुलांची गोपनीयता
@@ -142,6 +149,7 @@ If you have any questions or feedback about this Privacy Policy, please contact 
 तुम्ही विनंती सबमिट केल्यानंतर, आणि आम्ही ती खरोखर तुमच्याकडून आहे याची पडताळणी केल्यानंतर (तुमच्या नोंदणीकृत जन्मतारखेद्वारे, किंवा Google-प्रमाणित खात्यांसाठी नोंदणीकृत ईमेलद्वारे):
 - तुमची सर्व वैयक्तिक प्रोफाइल माहिती (तुमचे नाव, फोन नंबर आणि पासवर्डसह) आमच्या स्थानिक SQLite डेटाबेस आणि सुरक्षित MongoDB Atlas क्लाउड सर्व्हरवरून कायमची आणि सुरक्षितपणे हटवली जाईल.
 - सर्व संबंधित लॉगिन रेकॉर्ड आणि खाते मेटाडेटा पूर्णपणे काढून टाकला जाईल.
+- तुमचा पुश-सूचना टोकन आणि वार्ताहर सबस्क्रिप्शन/सूचना प्राधान्ये तुमच्या खात्यासोबत हटवली जातील.
 - तुम्ही सबमिट केलेली पुनरावलोकने कायमची हटवली जातील.
 - विनंती सबमिट आणि पडताळणी केल्यापासून ७ दिवसांच्या आत हटवण्याची प्रक्रिया पूर्ण केली जाईल.
 - वरील हटवण्याला एकच अपवाद आहे: तुमच्या ॲपमधील क्रियाकलाप व सुरक्षा नोंदी (विभाग ७). मानक सुरक्षा-नोंदणी पद्धतीनुसार आणि विभाग ७ मध्ये नमूद केल्याप्रमाणे, तुमचे खाते हटवल्यानंतरही या अंतर्गत सुरक्षितता आणि सेवा-अखंडतेच्या उद्देशाने ठेवल्या जातात. त्या याव्यतिरिक्त इतर कोणत्याही कारणासाठी वापरल्या जात नाहीत, आणि त्या कधीही सार्वजनिकरित्या किंवा तृतीय-पक्षांसोबत शेअर केल्या जात नाहीत.
