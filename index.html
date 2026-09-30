@@ -52,7 +52,7 @@ To provide and improve our local directory services, we may collect the followin
 - Device Identifier: When you register a business or create an account, we record a device identifier (Android ID) solely to limit the number of business listings and accounts that can be registered from a single device, as an anti-abuse measure. It is not used to track your activity elsewhere.
 - Location Information: With your explicit permission (via your device's location permission prompt), we access your device's approximate or precise location to show you nearby businesses and calculate distance. You may decline this permission and the App remains fully usable — location access only enables distance-based sorting and is not required for core features.
 - Connection Information: Basic log data related to synchronization requests with our secure cloud servers.
-- Push Notification Token: If you grant notification permission, we store a device-specific push-notification token (issued by Firebase Cloud Messaging) on your account, used solely to deliver in-app content notifications — for example, when a reporter you're subscribed to posts new news, a reel, or an e-paper. You may decline or later revoke notification permission from your device settings at any time; the App remains fully usable without it, and declining/revoking only disables this notification delivery.
+- Push Notification Token: If you grant notification permission, we store a device-specific push-notification token on your account, used solely to deliver in-app content notifications — for example, when a reporter you're subscribed to posts new news, a reel, or an e-paper. You may decline or later revoke notification permission from your device settings at any time; the App remains fully usable without it, and declining/revoking only disables this notification delivery.
 
 2. How We Use Your Information
 We use the collected data for various purposes:
@@ -61,14 +61,14 @@ We use the collected data for various purposes:
 - To attribute review comments and ratings with your display name to maintain a community-vetted, reliable listing ecosystem.
 - To review and publish business listings you submit, and to limit business registrations per account/device to prevent abuse.
 - To show you nearby businesses and approximate distances, only when you grant location permission.
-- To allow secure offline storage via local Room databases and seamless cloud-sync to MongoDB Atlas.
+- To allow secure offline storage on your device and seamless cloud-sync with our secure servers.
 - To deliver notifications about new content (news, reels, e-papers) from reporters you're subscribed to, only if you've granted notification permission; you may unsubscribe from any specific reporter, or revoke notification permission entirely, at any time from within the App or your device settings.
 
 3. Sharing and Disclosure
-We do NOT sell, trade, or share your personal identification info with any third-party marketing companies, advertisers, or secondary organizations. Your data is strictly used for the core directory services of Majalgaon City. Business listings you submit (business name, address, phone, hours, etc.) are, by design, published publicly within the App's directory once approved, since that is the purpose of the listing feature — this does not apply to your personal account information (name, phone, password, DOB), which is never made public. Photos, videos, and PDFs attached to news posts, business listings, or your profile (when you choose to add one) are stored with Cloudflare R2, a cloud storage service, solely to host and display that media within the App — Cloudflare does not receive any of your other personal information. A small number of older photos uploaded before September 2026 remain stored with our previous provider, Cloudinary, under the same terms.
+We do NOT sell, trade, or share your personal identification info with any third-party marketing companies, advertisers, or secondary organizations. Your data is strictly used for the core directory services of Majalgaon City. Business listings you submit (business name, address, phone, hours, etc.) are, by design, published publicly within the App's directory once approved, since that is the purpose of the listing feature — this does not apply to your personal account information (name, phone, password, DOB), which is never made public. Photos, videos, and PDFs attached to news posts, business listings, or your profile (when you choose to add one) are stored with a secure third-party cloud storage service solely to host and display that media within the App — that service does not receive any of your other personal information.
 
 4. Data Security and Offline Mode
-The App is built with an offline-first design pattern. Most information is saved on your device's secure sandbox using SQLite Room databases. When you perform cloud synchronization, your account details and contributed reviews are transmitted securely over SSL/TLS encrypted pipelines to our secure server clusters.
+The App is built with an offline-first design pattern. Most information is saved securely on your device. When you perform cloud synchronization, your account details and contributed reviews are transmitted securely (SSL/TLS encrypted) to our secure servers.
 
 5. Permissions and Access
 The App requests the following permissions:
@@ -86,7 +86,7 @@ To protect the integrity of our local directory and to maintain and improve the 
 8. Account Deletion and Data Retention (Google Play Policy Compliant)
 You have the right to request the deletion of your account and all associated personal data at any time. You can initiate this request from the app's side menu by clicking "Delete My Account" or by visiting our secure external web form.
 Upon submitting your deletion request, and after we verify it is genuinely from you (via your registered Date of Birth, or registered email for Google-authenticated accounts):
-- All personal profile information (including your name, phone number, and password) will be permanently and securely deleted from our local SQLite database and secure MongoDB Atlas cloud servers.
+- All personal profile information (including your name, phone number, and password) will be permanently and securely deleted from your device and our secure servers.
 - All associated login records and account metadata will be purged.
 - Your push-notification token and reporter subscription/notification preferences will be deleted along with your account.
 - Reviews you submitted will be permanently deleted.
@@ -113,7 +113,7 @@ If you have any questions or feedback about this Privacy Policy, please contact 
 - डिव्हाइस ओळखकर्ता: व्यवसाय नोंदणी किंवा खाते तयार करताना, गैरवापर रोखण्यासाठी एका डिव्हाइसवरून नोंदणी करता येणाऱ्या व्यवसायांची आणि खात्यांची संख्या मर्यादित करण्यासाठी डिव्हाइस ओळखकर्ता (Android ID) नोंदवला जातो. याचा वापर तुमच्या इतर हालचाली ट्रॅक करण्यासाठी केला जात नाही.
 - स्थान माहिती: तुमच्या स्पष्ट परवानगीने (तुमच्या डिव्हाइसच्या स्थान परवानगी विनंतीद्वारे), जवळचे व्यवसाय दाखवण्यासाठी आणि अंतर मोजण्यासाठी आम्ही तुमचे अंदाजे किंवा अचूक स्थान वापरतो. तुम्ही ही परवानगी नाकारू शकता आणि ॲप पूर्णपणे वापरण्यायोग्य राहते — स्थान प्रवेश फक्त अंतरानुसार क्रमवारीसाठी वापरला जातो आणि आवश्यक नाही.
 - कनेक्शन माहिती: आमच्या सुरक्षित क्लाउड सर्व्हरसह सिंक्रोनाइझेशनशी संबंधित मूलभूत लॉग डेटा.
-- पुश सूचना टोकन: जर तुम्ही सूचना परवानगी दिली, तर आम्ही तुमच्या खात्यावर एक डिव्हाइस-विशिष्ट पुश-सूचना टोकन (Firebase Cloud Messaging द्वारे जारी केलेला) साठवतो, जो फक्त ॲपमधील सामग्री सूचना पाठवण्यासाठी वापरला जातो — उदाहरणार्थ, जेव्हा तुम्ही सबस्क्राइब केलेला वार्ताहर नवीन बातमी, रील किंवा ई-पेपर पोस्ट करतो. तुम्ही सूचना परवानगी कधीही नाकारू शकता किंवा तुमच्या डिव्हाइस सेटिंग्जमधून रद्द करू शकता; ॲप त्याशिवायही पूर्णपणे वापरण्यायोग्य राहते — नाकारल्याने/रद्द केल्याने फक्त ही सूचना सेवा बंद होते.
+- पुश सूचना टोकन: जर तुम्ही सूचना परवानगी दिली, तर आम्ही तुमच्या खात्यावर एक डिव्हाइस-विशिष्ट पुश-सूचना टोकन साठवतो, जो फक्त ॲपमधील सामग्री सूचना पाठवण्यासाठी वापरला जातो — उदाहरणार्थ, जेव्हा तुम्ही सबस्क्राइब केलेला वार्ताहर नवीन बातमी, रील किंवा ई-पेपर पोस्ट करतो. तुम्ही सूचना परवानगी कधीही नाकारू शकता किंवा तुमच्या डिव्हाइस सेटिंग्जमधून रद्द करू शकता; ॲप त्याशिवायही पूर्णपणे वापरण्यायोग्य राहते — नाकारल्याने/रद्द केल्याने फक्त ही सूचना सेवा बंद होते.
 
 २. आम्ही तुमच्या माहितीचा वापर कसा करतो
 आम्ही गोळा केलेल्या डेटाचा वापर विविध कारणांसाठी करतो:
@@ -122,14 +122,14 @@ If you have any questions or feedback about this Privacy Policy, please contact 
 - एक विश्वसनीय लिस्टिंग परिसंस्था राखण्यासाठी तुमच्या डिस्प्ले नावासह पुनरावलोकन टिप्पण्या आणि रेटिंग्सचे श्रेय देण्यासाठी.
 - तुम्ही सबमिट केलेल्या व्यवसाय नोंदी पुनरावलोकन आणि प्रकाशित करण्यासाठी, आणि गैरवापर रोखण्यासाठी प्रति खाते/डिव्हाइस व्यवसाय नोंदणी मर्यादित करण्यासाठी.
 - तुम्ही स्थान परवानगी दिल्यासच, जवळचे व्यवसाय आणि अंदाजे अंतर दाखवण्यासाठी.
-- सुरक्षित ऑफलाइन स्टोरेज आणि क्लाउड-सिंक (MongoDB Atlas) सुरळीतपणे चालवण्यासाठी.
+- सुरक्षित ऑफलाइन स्टोरेज आणि क्लाउड-सिंक सुरळीतपणे चालवण्यासाठी.
 - तुम्ही सबस्क्राइब केलेल्या वार्ताहरांकडून येणाऱ्या नवीन सामग्रीबद्दल (बातम्या, रील्स, ई-पेपर) सूचना पाठवण्यासाठी, फक्त जर तुम्ही सूचना परवानगी दिली असेल; तुम्ही कोणत्याही विशिष्ट वार्ताहरापासून अनसबस्क्राइब करू शकता, किंवा सूचना परवानगी पूर्णपणे रद्द करू शकता, ॲपमध्ये किंवा तुमच्या डिव्हाइस सेटिंग्जमधून कधीही.
 
 ३. माहितीचे सामायिकरण आणि प्रकटीकरण
-आम्ही तुमची वैयक्तिक माहिती कोणत्याही तृतीय-पक्ष विपणन कंपन्या, जाहिरातदार किंवा दुय्यम संस्थांना विकत नाही, व्यापार करत नाही किंवा सामायिक करत नाही. तुमचा डेटा केवळ माजलगाव सिटीच्या मूळ सेवांसाठी वापरला जातो. तुम्ही सबमिट केलेली व्यवसाय नोंद (व्यवसायाचे नाव, पत्ता, फोन, वेळा इ.) मंजुरीनंतर, या वैशिष्ट्याच्या उद्देशानुसार, ॲपच्या डायरेक्टरीमध्ये सार्वजनिकरित्या प्रकाशित केली जाते — हे तुमच्या वैयक्तिक खाते माहितीला (नाव, फोन, पासवर्ड, जन्मतारीख) लागू होत नाही, जी कधीही सार्वजनिक केली जात नाही. बातम्यांच्या पोस्ट, व्यवसाय नोंदी किंवा तुमच्या प्रोफाइलशी जोडलेले फोटो, व्हिडिओ आणि पीडीएफ (जेव्हा तुम्ही ते जोडता) फक्त ॲपमध्ये होस्ट आणि दाखवण्यासाठी Cloudflare R2 या क्लाउड स्टोरेज सेवेवर साठवले जातात — Cloudflare ला तुमची इतर कोणतीही वैयक्तिक माहिती मिळत नाही. सप्टेंबर २०२६ पूर्वी अपलोड केलेले काही जुने फोटो आमच्या पूर्वीच्या सेवा प्रदात्या, Cloudinary, कडे त्याच अटींनुसार साठवलेले राहतात.
+आम्ही तुमची वैयक्तिक माहिती कोणत्याही तृतीय-पक्ष विपणन कंपन्या, जाहिरातदार किंवा दुय्यम संस्थांना विकत नाही, व्यापार करत नाही किंवा सामायिक करत नाही. तुमचा डेटा केवळ माजलगाव सिटीच्या मूळ सेवांसाठी वापरला जातो. तुम्ही सबमिट केलेली व्यवसाय नोंद (व्यवसायाचे नाव, पत्ता, फोन, वेळा इ.) मंजुरीनंतर, या वैशिष्ट्याच्या उद्देशानुसार, ॲपच्या डायरेक्टरीमध्ये सार्वजनिकरित्या प्रकाशित केली जाते — हे तुमच्या वैयक्तिक खाते माहितीला (नाव, फोन, पासवर्ड, जन्मतारीख) लागू होत नाही, जी कधीही सार्वजनिक केली जात नाही. बातम्यांच्या पोस्ट, व्यवसाय नोंदी किंवा तुमच्या प्रोफाइलशी जोडलेले फोटो, व्हिडिओ आणि पीडीएफ (जेव्हा तुम्ही ते जोडता) फक्त ॲपमध्ये होस्ट आणि दाखवण्यासाठी एका सुरक्षित तृतीय-पक्ष क्लाउड स्टोरेज सेवेवर साठवले जातात — त्या सेवेला तुमची इतर कोणतीही वैयक्तिक माहिती मिळत नाही.
 
 ४. डेटा सुरक्षा आणि ऑफलाइन मोड
-हे ॲप ऑफलाइन-फर्स्ट डिझाइन पॅटर्नसह तयार केले गेले आहे. बहुतांश माहिती तुमच्या डिव्हाइसच्या सुरक्षित सँडबॉक्सवर SQLite रूम डेटाबेसचा वापर करून सुरक्षित ठेवली जाते. जेव्हा तुम्ही क्लाउड सिंक करता, तेव्हा तुमचे खाते तपशील आणि पुनरावलोकने आमच्या सुरक्षित सर्व्हर क्लस्टर्समध्ये SSL/TLS एनक्रिप्टेड पाइपलाइनद्वारे सुरक्षितपणे पाठवली जातात.
+हे ॲप ऑफलाइन-फर्स्ट डिझाइन पॅटर्नसह तयार केले गेले आहे. बहुतांश माहिती तुमच्या डिव्हाइसवर सुरक्षितपणे साठवली जाते. जेव्हा तुम्ही क्लाउड सिंक करता, तेव्हा तुमचे खाते तपशील आणि पुनरावलोकने आमच्या सुरक्षित सर्व्हरवर SSL/TLS एनक्रिप्टेड पद्धतीने सुरक्षितपणे पाठवली जातात.
 
 ५. परवानग्या आणि प्रवेश (Permissions)
 ॲप खालील परवानग्या मागते:
@@ -147,7 +147,7 @@ If you have any questions or feedback about this Privacy Policy, please contact 
 ८. खाते हटवणे आणि डेटा धारणा (Google Play धोरणांचे पालन)
 तुम्हाला तुमचे खाते आणि सर्व संबंधित वैयक्तिक डेटा कधीही हटवण्याची विनंती करण्याचा अधिकार आहे. तुम्ही ॲपच्या साइड मेनूमधील "माझे खाते हटवा" (Delete My Account) यावर क्लिक करून किंवा आमच्या सुरक्षित बाह्य वेब फॉर्मला भेट देऊन ही विनंती सुरू करू शकता.
 तुम्ही विनंती सबमिट केल्यानंतर, आणि आम्ही ती खरोखर तुमच्याकडून आहे याची पडताळणी केल्यानंतर (तुमच्या नोंदणीकृत जन्मतारखेद्वारे, किंवा Google-प्रमाणित खात्यांसाठी नोंदणीकृत ईमेलद्वारे):
-- तुमची सर्व वैयक्तिक प्रोफाइल माहिती (तुमचे नाव, फोन नंबर आणि पासवर्डसह) आमच्या स्थानिक SQLite डेटाबेस आणि सुरक्षित MongoDB Atlas क्लाउड सर्व्हरवरून कायमची आणि सुरक्षितपणे हटवली जाईल.
+- तुमची सर्व वैयक्तिक प्रोफाइल माहिती (तुमचे नाव, फोन नंबर आणि पासवर्डसह) तुमच्या डिव्हाइसवरून आणि आमच्या सुरक्षित सर्व्हरवरून कायमची आणि सुरक्षितपणे हटवली जाईल.
 - सर्व संबंधित लॉगिन रेकॉर्ड आणि खाते मेटाडेटा पूर्णपणे काढून टाकला जाईल.
 - तुमचा पुश-सूचना टोकन आणि वार्ताहर सबस्क्रिप्शन/सूचना प्राधान्ये तुमच्या खात्यासोबत हटवली जातील.
 - तुम्ही सबमिट केलेली पुनरावलोकने कायमची हटवली जातील.
